@@ -1,0 +1,43 @@
+#fundo_camp{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 3400px;
+    width: 1358px;
+    margin-top: 0;
+    background-color: rgb(24, 26, 37);
+    
+}
+h1{
+    font-family: 'Antonio', sans-serif;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 50px;
+}
+#demacia{
+    background-color: rgba(255, 255, 255, 0.842);
+    border-radius: 20px;
+    width: 97%;
+    height: 620px;
+    float:right;
+    margin-top: 25px;
+    margin-right: 10px;
+    padding: 10px;
+    
+}
+#demacia h2{
+    font-family: 'Antonio', sans-serif;
+    text-align: center;
+}
+#demacia img{
+    margin-top: 10px;
+    margin-left: 310px;
+    border-radius: 10px;
+
+}
+#demacia b{
+    font-family: 'Antonio', sans-serif;
+    margin-left: 10px;
+    margin-top: 10px;
+}

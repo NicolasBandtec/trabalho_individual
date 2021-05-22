@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../trabalho_individual/css/style.css">
+    <link rel="shortcut icon" href="../trabalho_individual/img/lol-icon.png" type="image/x-icon">
+    <title>home</title>
+</head>
+
+<body>
+    <div class="cabecalho">
+        <div class="caixa">
+            <span>
+                <img src="../trabalho_individual/img/riot-games-logo.png" alt="riot"
+                    style="width: 100px; height: 60px;">
+            </span>
+            <nav>
+                <ul class="nav_header">
+                    <li><a href="../trabalho_individual/index.html">HOME</a></li>
+                    <li><a href="../trabalho_individual/campeoes.html">CAMPEÕES</a></li>
+                    <li><a href="../trabalho_individual/historia.html">MUNDO</a></li>
+                    <li><a href="../trabalho_individual/cadastro.html"> CADASTRO</a></li>
+                    <li><a href="../trabalho_individual/login.html">LOGIN</a></li>
+
+                </ul>
+            </nav>
+
+        </div>
+
+    </div>
+
+    <div class="fundo">
+        <div class="conteudo">
+            <div id="intro" style="display: block;">
+                <h1>É novo no jogo e quer conhecer melhor?</h1>
+                <img src="../trabalho_individual/img/blitz.png" alt="blitz"><br>
+                <button onclick="btn_começar()"> Vamos Começar!</button>
+
+            </div>
+
+            <div id="mapa" style="display: none;">
+                <h1>Objetivo do jogo</h1>
+                <img src="../trabalho_individual/img/mapa.png" alt="mapa"><br>
+                <h4>O Objetivo é atravessar o mapa até a base inimiga, destruindo as torres, inibidores e por fim o
+                    nexus</h4>
+                <h4> A primeira equipe a destruir o nexus inimigo ganha</h4>
+                <button onclick="btn_mapa()">Continuar!</button>
+
+            </div>
+
+            <div id="equipe" style="display: none;">
+                <h1>Equipes</h1>
+                <h2>rotas:</h2>
+                <div id="fila_um">
+                    <img class="img" src="../trabalho_individual/img/top.png" alt="top laner"
+                        style="width: 100px; height: 100px;">
+                    <img class="img2" src="../trabalho_individual/img/mid.png" alt="mid laner"
+                        style="width: 100px; height: 100px;">
+                    <img class="img3" src="../trabalho_individual/img/jungle.png" alt="jungle"
+                        style="width: 100px; height: 100px;">
+                    <b>Top laner&emsp;&emsp;&emsp;&emsp;&emsp;Mid laner&emsp;&emsp;&emsp;&emsp;Jungle</b>
+
+                </div>
+
+                <div id="fila_dois">
+                    <img class="img4" src="../trabalho_individual/img/adc.png" alt="Atirador"
+                        style="width: 100px; height: 100px;">
+                    <img class="img5" src="../trabalho_individual/img/suporte.png" alt="suporte"
+                        style="width: 100px; height: 100px;">
+                    <b>Atirador&emsp;&emsp;&emsp;&emsp;&emsp;Suporte</b>
+
+                </div>
+
+                <h4>Cada equipe é formada por um total de cinco jogadores sendo que cada um tem sua função no time</h4>
+                <h4>Após selecionar suas rotas eles devem selecionar seus campeões e a partida tera inicio</h4>
+                <h3>Conheça alguns Campeões:</h3>
+                <button onclick="btn_campeoes()"> Veja os Campeões!</button>
+
+            </div>
+
+        </div>
+
+    </div>
+    <footer class="footer">
+        <div class="caixa_footer">
+            <nav>
+                <ul class="bot_list">
+                    <li>Telefone: 9999-9999</li>
+                    <li>Email: contato@gmail.com.br</li>
+                    <li>Endereço: Rua Teffé</li>
+                </ul>
+            </nav>
+            <small>&copy; Copyright 2021, Site Bandtec</small>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+<script>
+    function btn_começar() {
+        intro.style.display = 'none';
+        mapa.style.display = 'block';
+    }
+    function btn_mapa() {
+        intro.style.display = 'none';
+        mapa.style.display = 'none';
+        equipe.style.display = 'block';
+    }
+    function btn_campeoes(){
+        window.location.href = 'campeoes.html'
+    }
+</script>
