@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_cad.css">
+    <link rel="shortcut icon" href="img/lol-icon.png" type="image/x-icon">
+    <title>Cadastro</title>
+</head>
+
+<body id="cadastro">
+    <div class="cabecalho">
+
+        <div class="caixa">
+            <span>
+                <img src="img/riot-games-logo.png" alt="riot"
+                    style="width: 100px; height: 60px;">
+            </span>
+            <nav>
+                <ul class="nav_header">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="campeoes.html">CAMPEÕES</a></li>
+                    <li><a href="historia.html">MUNDO</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+
+
+
+                </ul>
+            </nav>
+
+        </div>
+
+    </div>
+    <div class="fundo_cad">
+        <div class="conteudo_cad">
+            <h2>CADASTRO</h2>
+
+            <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+
+                <label class="custom-field one">
+                    <input id="inp_nome" name="nome" type="text" placeholder=" " />
+                    <span class="placeholder">Nome</span>
+                </label>
+                <br>
+                <br>
+                <label class="custom-field one">
+                    <input id="inp_email" name="email" type="text" placeholder=" " onkeyup="emailcheck()" />
+                    <span class="placeholder">Email</span>
+                </label>
+                <br>
+                <br>
+                <label class="custom-field one">
+                    <input id="inp_senha" name="senha" type="password" placeholder=" " onkeyup="senhacheck()" />
+                    <span class="placeholder">Senha</span>
+                </label>
+                <br>
+                <br>
+                <label class="custom-field one">
+                    <input id="inp_confirmsenha" type="password" type="text" placeholder=" " onkeyup="senhaconfirm()" />
+                    <span class="placeholder">Confirma senha</span>
+                </label>
+                <br>
+
+                <button type="submit">CRIAR CONTA</button>
+            </form>
+
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="caixa_footer">
+            <nav>
+                <ul class="bot_list">
+                    <li>Telefone: 9999-9999</li>
+                    <li>Email: contato@gmail.com.br</li>
+                    <li>Endereço: Rua Teffé</li>
+                </ul>
+            </nav>
+            <small>&copy; Copyright 2021, Site Bandtec</small>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
+
+<script>
+    function cadastrar() {
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+            
+            if (response.ok) {
+
+                alert('Cadastrado com sucesso');
+                window.location.href='login.html';
+
+            } else {
+
+                console.log('Erro de cadastro!');
+                response.text().then(function (resposta) {
+                    div_erro.innerHTML = resposta;
+                });
+            }
+        });
+
+        return false;
+    }
+</script>

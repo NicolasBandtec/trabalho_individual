@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_usu.css">
+    <link rel="shortcut icon" href="img/lol-icon.png" type="image/x-icon">
+    <title>Usuario</title>
+    <script src="funcoes.js"></script>
+</head>
+
+<body>
+    <div class="cabecalho">
+        <div class="caixa">
+            <span>
+                <img src="img/riot-games-logo.png" alt="riot" style="width: 100px; height: 60px;">
+            </span>
+            <nav>
+                <ul class="nav_header">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="campeoes.html">CAMPEÕES</a></li>
+                    <li><a href="historia.html">MUNDO</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </div>
+    <div id="usuario">
+        <div class="conteudo_usuario">
+            <div class="info_usuario">
+                <span class="info_usuario">NICK:<b id="b_usuario"></b>!</span>
+                <br><br>
+                <span class="info_usuario">Campeões adquiridos:<b id="num_camp"></b><b>/180</b></span>
+                <br>
+                <span class="info_usuario">Vitorias:<b id="num_win"></b></span>
+                <br>
+                <span class="info_usuario">Derrotas:<b id="num_lose"></b></span>
+                <br>
+                <br>
+                <button onclick="logoff()">Sair do perfil</button>
+            </div>
+        </div>
+
+        <div id="info_cont">
+            <ul id="nav_perfil">
+                <li><b onclick="historico()">HISTORICO</b></li>
+                <li><b onclick="elos()">ELOS</b></li>
+                <li><b onclick="graficos()">DIVISÃO DE JOGADORES</b></li>
+            </ul>
+            <br>
+            <div id="hist" style="display: none;">
+                <img src="img/historico.png" alt="historico">
+            </div>
+            <div id="elo" style="display: none;">
+                <img src="elos/ferro.png" alt="ferro" style="width: 150px; height: 140px;">
+                <img src="elos/bronze.png" alt="bronze" style="width: 150px; height: 140px;">
+                <img src="elos/prata.png" alt="prata" style="width: 150px; height: 140px;">
+                <b>FERRO</b><b>BRONZE</b><b>PRATA</b>
+                <br>
+                <br>
+                <img src="elos/ouro.png" alt="ouro" style="width: 150px; height: 140px;">
+                <img src="elos/platina.png" alt="platina" style="width: 150px; height: 140px;">
+                <img src="elos/diamante.png" alt="diamante" style="width: 150px; height: 140px;">
+                <b>OURO</b><b>PLATINA</b><b>DIAMANTE</b>
+                <br>
+                <br>
+                <img src="elos/mestre.png" alt="mestre" style="width: 150px; height: 140px;">
+                <img src="elos/grao-mestre.png" alt="grao-mestre" style="width: 150px; height: 140px;">
+                <img src="elos/Challenger.png" alt="Challenger" style="width: 130px; height: 120px;">
+                <a>MESTRE</a><a>GRAO-MESTRE</a><a>CHALLENGER</a>
+            </div>
+
+            
+        </div>
+
+
+
+
+    </div>
+
+    <div id="fundo_rando">
+        <img id="fundo_usu" />
+    </div>
+
+
+
+
+
+    <footer class="footer">
+        <div class="caixa_footer">
+            <nav>
+                <ul class="bot_list">
+                    <li>Telefone: 9999-9999</li>
+                    <li>Email: contato@gmail.com.br</li>
+                    <li>Endereço: Rua Teffé</li>
+                </ul>
+            </nav>
+            <small>&copy; Copyright 2021, Site Bandtec</small>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+<script>
+
+    verificar_autenticacao()
+
+    window.onload = function () {
+
+        var imgr = Math.round(Math.random() * 9);
+
+
+        var imgsrc = [
+            'fundo_usuario/1.jpg',
+            'fundo_usuario/2.jpg',
+            'fundo_usuario/3.jpg',
+            'fundo_usuario/4.jpg',
+            'fundo_usuario/5.jpg',
+            'fundo_usuario/6.jpg',
+            'fundo_usuario/7.jpg',
+            'fundo_usuario/8.jpg',
+            'fundo_usuario/9.jpg',
+            'fundo_usuario/10.jpg'
+        ];
+
+        document.getElementById('fundo_usu').src = imgsrc[imgr];
+
+
+    }
+
+    var vitoria = (parseInt(Math.random() * 1501)) + 150;
+    var derrota = (parseInt(Math.random() * 1501)) + 300;
+    var campeaos = parseInt(Math.random() * 181);
+
+    num_camp.innerHTML = `${campeaos}`;
+    num_win.innerHTML = `${vitoria}`;
+    num_lose.innerHTML = `${derrota}`;
+
+    function historico() {
+        hist.style.display = 'block';
+        elo.style.display = 'none';
+    }
+    function elos(){
+        hist.style.display = 'none';
+        elo.style.display = 'block';
+    }
+
+</script>

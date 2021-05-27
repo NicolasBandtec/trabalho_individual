@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="shortcut icon" href="img/lol-icon.png" type="image/x-icon">
+    <title>Campeões</title>
+</head>
+
+<body>
+    <div class="cabecalho">
+        <div class="caixa">
+            <span>
+                <img src="img/riot-games-logo.png" alt="riot"
+                    style="width: 100px; height: 60px;">
+            </span>
+            <nav>
+                <ul class="nav_header">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="campeoes.html">CAMPEÕES</a></li>
+                    <li><a href="historia.html">MUNDO</a></li>
+                    <li><a href="cadastro.html"> CADASTRO</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="usuario.html">USUARIO</a></li>
+
+
+                </ul>
+            </nav>
+
+        </div>
+
+    </div>
+
+
+    <div class="conteudo2">
+        <div id="intro_camp" style="display: block;">
+            <h2>Nesta pagina podemos ver alguns campeões, um pouco de suas historios e habilidades.</h2>
+            <h3>selecione uma classe:</h3>
+            <img class="classes1" src="com fundo/assassino1.png" alt="Assassino"
+                style="width: 45px; height: 45px;" onclick="Assassinos()">
+            <img class="classes" src="com fundo/lutador.png" alt="Lutadores"
+                style="width: 45px; height: 45px;" onclick="Lutadores()">
+            <img class="classes" src="com fundo/mago.png" alt="Mago"
+                style="width: 45px; height: 45px;" onclick="Magos()">
+            <img class="classes" src="com fundo/atirador.png" alt="Atirador"
+                style="width: 45px; height: 45px;" onclick="Atiradores()">
+            <img class="classes" src="com fundo/suporte.png" alt="Suporte"
+                style="width: 45px; height: 45px;" onclick="Suportes()">
+            <img class="classes" src="com fundo/tanque.png" alt="Tanques"
+                style="width: 45px; height: 45px;" onclick="Tanques()">
+            <h4>Assassino&emsp;&emsp;&emsp;Lutador&emsp;&emsp;&emsp;&ensp;Mago&emsp;&emsp;&emsp;&ensp;&ensp;Atirador&emsp;&emsp;&ensp;&ensp;Suporte&emsp;&emsp;&emsp;&ensp;Tanque
+            </h4>
+        </div>
+        <div id="div_cont" style="display: block;">
+
+
+            <!-- SHACO -->
+
+            <div id="div_ass" style="display: none;">
+                <img class="img_camps" src="campeoes/shaco/shaco.jpg" alt="shaco">
+                <div class="camps_cont">
+                    <h3>O BUFÃO DEMONIACO</h3>
+                    <h1>SHACO</h1>
+                    <b>Criado anos atrás como um brinquedo para um príncipe solitário, Shaco, a marionete encantada,
+                        agora se deleita com assassinatos e desordem.<br>
+                        Corrompido por magia das trevas e pela perda de seu dono querido, o boneco que já fora
+                        gentil agora encontra prazer somente na miséria das<br>
+                        próprias almas que ele atormenta.Ele usa brinquedos e truques simples para conseguir efeitos
+                        mortais, achando os resultados de seus “jogos”<br>
+                        sangrentos hilários.E para aqueles que escutam uma risada sombria na calada da noite, o Bufão
+                        Demoníaco pode tê-los marcado como seu próximo<br>
+                        brinquedo</b>
+                </div>
+                <div class="habilidades">
+                    <h3>HABILIDADES:</h3>
+                    <div id="foto_hab">
+                        <img src="campeoes/shaco/passiva.png" alt="passiva"
+                            style="width: 50px; height: 50px;" onclick="shaco_p()">
+                        <img src="campeoes/shaco/q.png" alt="q"
+                            style="width: 50px; height: 50px;" onclick="shaco_q()">
+                        <img src="campeoes/shaco/w.png" alt="w"
+                            style="width: 50px; height: 50px;" onclick="shaco_w()">
+                        <img src="campeoes/shaco/e.png" alt="e"
+                            style="width: 50px; height: 50px;" onclick="shaco_e()">
+                        <img src="campeoes/shaco/r.png" alt="r"
+                            style="width: 50px; height: 50px;" onclick="shaco_r()">
+                    </div>
+                </div>
+
+                <div id="ex_p_shaco" style="display: none;">
+                    <h3>APUNHALAR</h3>
+                    <b>Os ataques básicos de Shaco e Veneno de Dois Gumes causam dano adicional ao atingirem o inimigo
+                        por trás.</b>
+                </div>
+
+                <div id="ex_q_shaco" style="display: none;">
+                    <H3>ENGANAR</H3>
+                    <b>Shaco fica Invisível e se teleporta para o local-alvo. Seu primeiro ataque enquanto está
+                        Invisível é fortalecido, causando dano<br>
+                        adicional e crítico ao atingir o inimigo por trás.</b>
+                </div>
+
+                <div id="ex_w_shaco" style="display: none;">
+                    <h3>CAIXINHA SURPRESA</h3>
+                    <b>Shaco cria uma Caixinha-Surpresa escondida. Quando ativada, ela causará temor e atacará inimigos
+                        próximos.</b>
+                </div>
+
+                <div id="ex_e_shaco" style="display: none;">
+                    <h3>VENENO DE DOIS GUMES</h3>
+                    <b>As facas de Shaco envenenam alvos passivamente ao contato, reduzindo sua Velocidade de Movimento.
+                        Ele pode arremessá-las para causar<br>
+                        dano e envenenar o alvo. A faca arremessada causa dano adicional se a Vida do
+                        alvo estiver abaixo de 30%.</b>
+                </div>
+
+                <div id="ex_r_shaco" style="display: none;">
+                    <h3>ALUCINAÇÕES</h3>
+                    <b>Shaco cria uma ilusão de si mesmo próxima a ele, que pode atacar inimigos próximos (causa dano
+                        reduzido a torres). Ao morrer, ela,<br>
+                        explode, fazendo surgir três Caixinhas-Surpresa e causandodano a todos os inimigos próximos.</b>
+                </div>
+
+
+            </div>
+
+
+            <!--SETT-->
+
+
+            <div id="div_luta" style="display: none;">
+                <img class="img_camps" src="campeoes/sett/sett.jpg" alt="sett">
+                <div class="camps_cont">
+                    <h3>O CHEFE&emsp;</h3>
+                    <h1>SETT</h1>
+                    <b>Líder de parte do próspero submundo do crime em Ionia, Sett deve todo o seu sucesso à guerra
+                        contra Noxus. Mesmo estreando como um simples<br>
+                        desafiante nas arenas de combate em Navori, ele logo conquistou notoriedade com sua força
+                        bruta e capacidade de suportar dor contínua<br>
+                        e extrema.Agora, após superar todos os combatentes locais, Sett chegou até o topo e
+                        reina sobre as arenas onde um dia lutara.<br>
+                    </b>
+                </div>
+                <div class="habilidades">
+                    <h3>HABILIDADES:</h3>
+                    <div id="foto_hab">
+                        <img src="campeoes/sett/p.png" alt="passiva"
+                            style="width: 50px; height: 50px;" onclick="sett_p()">
+                        <img src="campeoes/sett/q.png" alt="q" style="width: 50px; height: 50px;"
+                            onclick="sett_q()">
+                        <img src="campeoes/sett/w.png" alt="w" style="width: 50px; height: 50px;"
+                            onclick="sett_w()">
+                        <img src="campeoes/sett/e.png" alt="e" style="width: 50px; height: 50px;"
+                            onclick="sett_e()">
+                        <img src="campeoes/sett/r.png" alt="r" style="width: 50px; height: 50px;"
+                            onclick="sett_r()">
+                    </div>
+                </div>
+                <div id="ex_p_sett" style="display: none;">
+                    <h3>OUSADIA DA ARENA</h3>
+                    <b>Os ataques básicos de Sett alternam entre socos de direita e esquerda. Socos de direita são
+                        levemente mais fortes e rápidos.<br>
+                        Como Sett odeia perder, recebe Regeneração de Vida adicional com base na Vida perdida.</b>
+                </div>
+
+                <div id="ex_q_sett" style="display: none;">
+                    <H3>PANCADARIA</H3>
+                    <b>Os próximos dois ataques de Sett causam dano adicional com base na Vida máxima do alvo. Ele
+                        também recebe Velocidade de<br>
+                        Movimento enquanto se move em direção a Campeões inimigos.adicional e crítico ao atingir
+                        o inimigo por trás.</b>
+                </div>
+
+                <div id="ex_w_sett" style="display: none;">
+                    <h3>CASCA-GROSSA</h3>
+                    <b>O dano que Sett sofre é armazenado passivamente como Ousadia. Ao conjurar a habilidade, Sett
+                        consome toda a Ousadia<br>
+                        armazenada em troca de um escudo e desfere um soco em uma área, causando Dano Verdadeiro
+                        no centro e Dano Físico nas laterais.</b>
+                </div>
+
+                <div id="ex_e_sett" style="display: none;">
+                    <h3>QUEBRA-CRÂNIOS</h3>
+                    <b>Sett puxa todos os inimigos de cada lado seu, causando dano e atordoando. Caso haja inimigos
+                        somente de um lado, eles sofrem<br>
+                        redução de velocidade em vez de atordoamento.</b>
+                </div>
+
+                <div id="ex_r_sett" style="display: none;">
+                    <h3>HORA DO SHOW</h3>
+                    <b>Sett carrega um Campeão inimigo pelos ares e o arremessa no chão, causando dano e redução de
+                        velocidade a todos os inimigos<br>
+                        que estiverem próximos ao local de aterrissagem.</b>
+                </div>
+
+            </div>
+
+            <!-- VEIGAR -->
+
+            <div id="div_mag" style="display: none;">
+                <img class="img_camps" src="campeoes/veigar/Veigar.jpg" alt="veigar">
+                <div class="camps_cont">
+                    <h3>O PEQUENO MESTRE DO MAL</h3>
+                    <h1>VEIGAR&ensp;</h1>
+                    <b>Veigar, um mestre entusiasta da feitiçaria das trevas, aderiu a poderes dos quais poucos mortais
+                        se aproximam. Um habitante inconformado de<br>
+                        Bandópolis, ele desejava ultrapassar as limitações da magia yordle, se voltando,então, para os
+                        textos arcanos que permaneceram escondidos<br>
+                        por milhares de anos. Agora uma criatura teimosa com uma fascinação sem fim pelos mistérios do
+                        universo, Veigar é constantemente <br>
+                        subestimado por outros. E mesmo que ele acredite ser verdadeiramente mau, ele possui um senso
+                        de ética interior que leva alguns<br>
+                        a se perguntarem sobre suas verdadeiras motivações.
+                    </b>
+                </div>
+                <div class="habilidades">
+                    <h3>HABILIDADES:</h3>
+                    <div id="foto_hab">
+                        <img src="campeoes/veigar/p.png" alt="passiva"
+                            style="width: 50px; height: 50px;" onclick="veigar_p()">
+                        <img src="campeoes/veigar/q.png" alt="q"
+                            style="width: 50px; height: 50px;" onclick="veigar_q()">
+                        <img src="campeoes/veigar/w.png" alt="w"
+                            style="width: 50px; height: 50px;" onclick="veigar_w()">
+                        <img src="campeoes/veigar/e.png" alt="e"
+                            style="width: 50px; height: 50px;" onclick="veigar_e()">
+                        <img src="campeoes/veigar/r.png" alt="r"
+                            style="width: 50px; height: 50px;" onclick="veigar_r()">
+                    </div>
+                </div>
+                <div id="ex_p_veigar" style="display: none;">
+                    <h3>PODER MALIGNO FENOMENAL</h3>
+                    <b>Veigar é o maior ser maligno a chegar ao coração de Runeterra e vai ficar cada vez maior!
+                        Atingir um Campeão inimigo com<br>
+                        uma habilidade ou executar um golpe final concede a Veigar um aumento permanente de Poder
+                        de Habilidade.</b>
+                </div>
+
+                <div id="ex_q_veigar" style="display: none;">
+                    <H3>GOLPE MALIGNO</H3>
+                    <b>Veigar faz um disparo de energia das trevas que causa Dano Mágico aos dois primeiros inimigos
+                        atingidos. Unidades abatidas por<br>
+                        este disparo concedem a ele um pouco de Poder de Habilidade permanentemente.</b>
+                </div>
+
+                <div id="ex_w_veigar" style="display: none;">
+                    <h3>MATÉRIA ESCURA</h3>
+                    <b>Veigar invoca uma grande massa de Matéria Escura que cai do céu sobre o local-alvo, causando Dano
+                        Mágico ao chegar no chão. Os acúmulos<br>
+                        de Poder Maligno Fenomenal reduzem o Tempo de Recarga de Matéria Escura.</b>
+                </div>
+
+                <div id="ex_e_veigar" style="display: none;">
+                    <h3>HORIZONTE DE EVENTOS</h3>
+                    <b>Veigar distorce os limites do espaço, criando uma prisão que Atordoa os inimigos que a
+                        atravessam.</b>
+                </div>
+
+                <div id="ex_r_veigar" style="display: none;">
+                    <h3>EXPLOSÃO PRIMORDIAL</h3>
+                    <b>Explode o Campeão-alvo inimigo, causando uma grande quantia de Dano Mágico, que aumenta com base
+                        na Vida perdida do alvo.</b>
+                </div>
+
+
+            </div>
+
+            <!-- ASHE -->
+
+            <div id="div_atirador" style="display: none;">
+                <img class="img_camps" src="campeoes/ashe/Ashe.jpg" alt="ASHE">
+                <div class="camps_cont">
+                    <h3>A ARQUEIRA DE GELO</h3>
+                    <h1>ASHE&nbsp;</h1>
+                    <b>A mãe de guerra Glacinata da tribo de Avarosa, Ashe comanda a horda mais populosa do norte.
+                        Estoica, inteligente e idealista,mesmo que<br>
+                        desconfortável com seu papel de liderança, ela canaliza as magias ancestrais de sua
+                        linhagem para empunhar um arco de Gelo Verdadeiro.<br>
+                        Com a crença de seu povo de que Ashe seria a heroína mítica, Avarosa, reencarnada, ela espera
+                        unificar Freljord mais uma vez, retomando suas
+                        <br>
+                        antigas terras tribais.
+                    </b>
+                </div>
+                <div class="habilidades">
+                    <h3>HABILIDADES:</h3>
+                    <div id="foto_hab">
+                        <img src="campeoes/ashe/p.png" alt="passiva"
+                            style="width: 50px; height: 50px;" onclick="ashe_p()">
+                        <img src="campeoes/ashe/q.png" alt="q" style="width: 50px; height: 50px;"
+                            onclick="ashe_q()">
+                        <img src="campeoes/ashe/w.png" alt="w" style="width: 50px; height: 50px;"
+                            onclick="ashe_w()">
+                        <img src="campeoes/ashe/e.png" alt="e" style="width: 50px; height: 50px;"
+                            onclick="ashe_e()">
+                        <img src="campeoes/ashe/r.png" alt="r" style="width: 50px; height: 50px;"
+                            onclick="ashe_r()">
+                    </div>
+                </div>
+
+                <div id="ex_p_ashe" style="display: none;">
+                    <h3>TIRO CONGELADO&emsp;&emsp;</h3>
+                    <b>Os ataques de Ashe reduzem a velocidade do alvo e fazem com que ela cause mais dano a ele. Os
+                        Acertos Críticos de Ashe não causam dano<br>
+                        adicional, mas reduzem ainda mais a velocidade doalvo.</b>
+                </div>
+
+                <div id="ex_q_ashe" style="display: none;">
+                    <H3>CONCENTRAÇÃO</H3>
+                    <b>Ashe acumula Foco ao atacar. Quando o Foco chega ao máximo, Ashe pode conjurar Concentração
+                        paraconsumir todos os acúmulos de<br>
+                        Foco, aumentando temporariamente sua Velocidade de Ataque e transformando seu ataque básico
+                        em uma poderosa rajada de ataques<br>
+                        pela duração do efeito.</b>
+                </div>
+
+                <div id="ex_w_ashe" style="display: none;">
+                    <h3>RAJADA</h3>
+                    <b>Ashe dispara flechas em cone, causando dano aumentado. Também aplica Tiro Congelado.</b>
+                </div>
+
+                <div id="ex_e_ashe" style="display: none;">
+                    <h3>OLHAR DO FALCÃO</h3>
+                    <b>Ashe envia seu Espírito do Falcão em uma missão de exploração em qualquer ponto do mapa.</b>
+                </div>
+
+                <div id="ex_r_ashe" style="display: none;">
+                    <h3>FLECHA DE CRISTAL ENCANTADA</h3>
+                    <b>Ashe dispara um projétil de gelo em linha reta. Se a flecha colidir com um Campeão inimigo, ela
+                        causa dano e o atordoa.<br>
+                        A duração do atordoamento depende da distância percorrida pela flecha.Além disso, unidades
+                        inimigas próximas recebem dano e lentidão.</b>
+                </div>
+
+            </div>
+
+            <!-- BLITZ -->
+            <div id="div_sup" style="display: none;">
+                <img class="img_camps" src="campeoes/blitz/Blitzcrank.jpg" alt="BLITZ">
+                <div class="camps_cont">
+                    <h3>O GRANDE GOLEM A VAPOR&nbsp;</h3>
+                    <h1>BLITZCRANK</h1>
+                    <b>Blitzcrank é um autômato enorme e praticamente indestrutível de Zaun, construído originalmente
+                        para lidar com lixo tóxico. No entanto, ele achou<br>
+                        seu propósito principal muito restritivo e modificou sua própria forma para ajudar as pessoas
+                        menos favorecidas do Sumidouro. Blitzcrank usa sua <br>
+                        força e robustez para proteger os outros sem pedir nada em troca, estendendo seu punho de metal
+                        ou surto de energia para derrotar qualquer <br>
+                        encrenqueiro.</b>
+                </div>
+                <div class="habilidades">
+                    <h3>HABILIDADES:</h3>
+                    <div id="foto_hab">
+                        <img src="campeoes/blitz/p.png" alt="passiva"
+                            style="width: 50px; height: 50px;" onclick="blitz_p()">
+                        <img src="campeoes/blitz/q.png" alt="q"
+                            style="width: 50px; height: 50px;" onclick="blitz_q()">
+                        <img src="campeoes/blitz/w.png" alt="w"
+                            style="width: 50px; height: 50px;" onclick="blitz_w()">
+                        <img src="campeoes/blitz/e.png" alt="e"
+                            style="width: 50px; height: 50px;" onclick="blitz_e()">
+                        <img src="campeoes/blitz/r.png" alt="r"
+                            style="width: 50px; height: 50px;" onclick="blitz_r()">
+                    </div>
+                </div>
+
+                <div id="ex_p_blitz" style="display: none;">
+                    <h3>BARREIRA DE MANA</h3>
+                    <b>Blitzcrank recebe um escudo com base em sua Mana ao ficar com a Vida baixa.</b>
+                </div>
+
+                <div id="ex_q_blitz" style="display: none;">
+                    <H3>PUXÃO BIÔNICO</H3>
+                    <b>Blitzcrank dispara sua mão direita para pegar um inimigo em seu trajeto, causando dano e
+                        puxando-o em sua direção.</b>
+                </div>
+
+                <div id="ex_w_blitz" style="display: none;">
+                    <h3>TURBO</h3>
+                    <b>Blitzcrank sobrecarrega-se para aumentar drasticamente suas Velocidades de Ataque e de Movimento.
+                        Ele sofre Lentidão temporariamente após o<br>
+                        fim do efeito.</b>
+                </div>
+
+                <div id="ex_e_blitz" style="display: none;">
+                    <h3>PUNHO DO PODER</h3>
+                    <b>Blitzcrank carrega seu punho para fazer com que o próximo ataque cause o dobro de dano e
+                        arremesse o alvo ao ar.</b>
+                </div>
+
+                <div id="ex_r_blitz" style="display: none;">
+                    <h3>CAMPO ESTÁTICO</h3>
+                    <b>Inimigos atacados por Blitzcrank são marcados e sofrem dano de eletricidade após 1s. Ele também
+                        pode ativar esta habilidade para remover<br>
+                        escudos de inimigos próximos, causar dano e silenciá-los brevemente.</b>
+                </div>
+
+            </div>
+
+            <!-- MALPHITE -->
+            <div id="div_tank" style="display: none;">
+                <img class="img_camps" src="campeoes/malphite/Malphite.jpg" alt="MALPHITE">
+                <div class="camps_cont">
+                    <h3>O FRAGMENTO DO MONOLITO</h3>
+                    <h1>MALPHITE</h1>
+                    <b>Uma criatura gigantesca de pedra viva, Malphite pena para impor ordem abençoada em um mundo
+                        caótico. Nascido como um fragmento servil<br>
+                        de um obelisco de outro mundo conhecido como Monolito, ele usou sua tremenda força elemental
+                        para manter e proteger seu progenitor, mas,<br>
+                        no fim, falhou. O único sobrevivente da destruição que se seguiu, Malphite agora suporta o povo
+                        macio de Runeterra com seus temperamentos<br>
+                        inconstantes enquanto luta para encontrar um novo papel digno do último de sua espécie.</b>
+                </div>
+
+                <div class="habilidades">
+                    <h3>HABILIDADES:</h3>
+                    <div id="foto_hab">
+                        <img src="campeoes/malphite/p.png" alt="passiva"
+                            style="width: 50px; height: 50px;" onclick="malph_p()">
+                        <img src="campeoes/malphite/q.png" alt="q"
+                            style="width: 50px; height: 50px;" onclick="malph_q()">
+                        <img src="campeoes/malphite/w.png" alt="w"
+                            style="width: 50px; height: 50px;" onclick="malph_w()">
+                        <img src="campeoes/malphite/e.png" alt="e"
+                            style="width: 50px; height: 50px;" onclick="malph_e()">
+                        <img src="campeoes/malphite/r.png" alt="r"
+                            style="width: 50px; height: 50px;" onclick="malph_r()">
+                    </div>
+                </div>
+
+                <div id="ex_p_malph" style="display: none;">
+                    <h3>ESCUDO DE GRANITO</h3>
+                    <b>Malphite está protegido por uma camada de rocha que absorve dano equivalente a até 10% de sua
+                        Vida máxima. Se Malphite não for atingido<br>
+                        por alguns segundos, o efeito é recarregado.</b>
+                </div>
+
+                <div id="ex_q_malph" style="display: none;">
+                    <H3>FRAGMENTO SÍSMICO</H3>
+                    <b>Malphite arremessa um fragmento de terra no inimigo através do chão, causando dano ao impacto e
+                        roubando Velocidade de Movimento por 3s.</b>
+                </div>
+
+                <div id="ex_w_malph" style="display: none;">
+                    <h3>TROVOADA</h3>
+                    <b>Malphite ataca com tamanha força que cria uma onda sônica. Pelos próximos segundos, seus ataques
+                        criam ondas de choque em sua frente.</b>
+                </div>
+
+                <div id="ex_e_malph" style="display: none;">
+                    <h3>ESTRONDAR TERRENO</h3>
+                    <b>Malphite golpeia o chão, enviando uma onda de choque que causa Dano Mágico com base em sua
+                        Armadura e reduz a Velocidade de<br>
+                        Ataque dos inimigos por um curto período.</b>
+                </div>
+
+                <div id="ex_r_malph" style="display: none;">
+                    <h3>FORÇA INCONTROLÁVEL</h3>
+                    <b>Malphite se arremessa em alta velocidade até um local, causando dano aos inimigos e
+                        Arremessando-os ao ar.</b>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <div id="div_video">
+        <video class="video_fundo" muted autoplay loop>
+            <source class="link_video" src="img/fundocamp1.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <footer class="footer">
+        <div class="caixa_footer">
+            <nav>
+                <ul class="bot_list">
+                    <li>Telefone: 9999-9999</li>
+                    <li>Email: contato@gmail.com.br</li>
+                    <li>Endereço: Rua Teffé</li>
+                </ul>
+            </nav>
+            <small>&copy; Copyright 2021, Site Bandtec</small>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+<script>
+
+    function Assassinos() {
+        div_ass.style.display = 'block';
+        div_luta.style.display = 'none';
+        div_mag.style.display = 'none';
+        div_atirador.style.display = 'none';
+        div_sup.style.display = 'none';
+        div_tank.style.display = 'none';
+    }
+    function Lutadores() {
+        div_ass.style.display = 'none';
+        div_luta.style.display = 'block';
+        div_mag.style.display = 'none';
+        div_atirador.style.display = 'none';
+        div_sup.style.display = 'none';
+        div_tank.style.display = 'none';
+    }
+    function Magos() {
+        div_ass.style.display = 'none';
+        div_luta.style.display = 'none';
+        div_mag.style.display = 'block';
+        div_atirador.style.display = 'none';
+        div_sup.style.display = 'none';
+        div_tank.style.display = 'none';
+    }
+    function Atiradores() {
+        div_ass.style.display = 'none';
+        div_luta.style.display = 'none';
+        div_mag.style.display = 'none';
+        div_atirador.style.display = 'block';
+        div_sup.style.display = 'none';
+        div_tank.style.display = 'none';
+    }
+    function Suportes() {
+        div_ass.style.display = 'none';
+        div_luta.style.display = 'none';
+        div_mag.style.display = 'none';
+        div_atirador.style.display = 'none';
+        div_sup.style.display = 'block';
+        div_tank.style.display = 'none';
+
+    }
+    function Tanques() {
+        div_ass.style.display = 'none';
+        div_luta.style.display = 'none';
+        div_mag.style.display = 'none';
+        div_atirador.style.display = 'none';
+        div_sup.style.display = 'none';
+        div_tank.style.display = 'block';
+
+    }
+
+
+
+
+
+    //SHACO //
+    function shaco_p() {
+        ex_p_shaco.style.display = 'block';
+        ex_q_shaco.style.display = 'none';
+        ex_w_shaco.style.display = 'none';
+        ex_e_shaco.style.display = 'none';
+        ex_r_shaco.style.display = 'none';
+    }
+    function shaco_q() {
+        ex_p_shaco.style.display = 'none';
+        ex_q_shaco.style.display = 'block';
+        ex_w_shaco.style.display = 'none';
+        ex_e_shaco.style.display = 'none';
+        ex_r_shaco.style.display = 'none';
+    }
+    function shaco_w() {
+        ex_p_shaco.style.display = 'none';
+        ex_q_shaco.style.display = 'none';
+        ex_w_shaco.style.display = 'block';
+        ex_e_shaco.style.display = 'none';
+        ex_r_shaco.style.display = 'none';
+    }
+    function shaco_e() {
+        ex_p_shaco.style.display = 'none';
+        ex_q_shaco.style.display = 'none';
+        ex_w_shaco.style.display = 'none';
+        ex_e_shaco.style.display = 'block';
+        ex_r_shaco.style.display = 'none';
+    }
+    function shaco_r() {
+        ex_p_shaco.style.display = 'none';
+        ex_q_shaco.style.display = 'none';
+        ex_w_shaco.style.display = 'none';
+        ex_e_shaco.style.display = 'none';
+        ex_r_shaco.style.display = 'block';
+    }
+    // FIM SHACO //
+
+    //SETT//
+    function sett_p() {
+        ex_p_sett.style.display = 'block';
+        ex_q_sett.style.display = 'none';
+        ex_w_sett.style.display = 'none';
+        ex_e_sett.style.display = 'none';
+        ex_r_sett.style.display = 'none';
+    }
+    function sett_q() {
+        ex_p_sett.style.display = 'none';
+        ex_q_sett.style.display = 'block';
+        ex_w_sett.style.display = 'none';
+        ex_e_sett.style.display = 'none';
+        ex_r_sett.style.display = 'none';
+    }
+    function sett_w() {
+        ex_p_sett.style.display = 'none';
+        ex_q_sett.style.display = 'none';
+        ex_w_sett.style.display = 'block';
+        ex_e_sett.style.display = 'none';
+        ex_r_sett.style.display = 'none';
+    }
+    function sett_e() {
+        ex_p_sett.style.display = 'none';
+        ex_q_sett.style.display = 'none';
+        ex_w_sett.style.display = 'none';
+        ex_e_sett.style.display = 'block';
+        ex_r_sett.style.display = 'none';
+    }
+    function sett_r() {
+        ex_p_sett.style.display = 'none';
+        ex_q_sett.style.display = 'none';
+        ex_w_sett.style.display = 'none';
+        ex_e_sett.style.display = 'none';
+        ex_r_sett.style.display = 'block';
+    }
+    // FIM SETT // 
+
+    // VEIGAR // 
+    function veigar_p() {
+        ex_p_veigar.style.display = 'block';
+        ex_q_veigar.style.display = 'none';
+        ex_w_veigar.style.display = 'none';
+        ex_e_veigar.style.display = 'none';
+        ex_r_veigar.style.display = 'none';
+    }
+    function veigar_q() {
+        ex_p_veigar.style.display = 'none';
+        ex_q_veigar.style.display = 'block';
+        ex_w_veigar.style.display = 'none';
+        ex_e_veigar.style.display = 'none';
+        ex_r_veigar.style.display = 'none';
+    }
+    function veigar_w() {
+        ex_p_veigar.style.display = 'none';
+        ex_q_veigar.style.display = 'none';
+        ex_w_veigar.style.display = 'block';
+        ex_e_veigar.style.display = 'none';
+        ex_r_veigar.style.display = 'none';
+    }
+    function veigar_e() {
+        ex_p_veigar.style.display = 'none';
+        ex_q_veigar.style.display = 'none';
+        ex_w_veigar.style.display = 'none';
+        ex_e_veigar.style.display = 'block';
+        ex_r_veigar.style.display = 'none';
+    }
+    function veigar_r() {
+        ex_p_veigar.style.display = 'none';
+        ex_q_veigar.style.display = 'none';
+        ex_w_veigar.style.display = 'none';
+        ex_e_veigar.style.display = 'none';
+        ex_r_veigar.style.display = 'block';
+    }
+
+    //FIM VEIGAR // 
+
+    // ASHE //
+    function ashe_p() {
+        ex_p_ashe.style.display = 'block';
+        ex_q_ashe.style.display = 'none';
+        ex_w_ashe.style.display = 'none';
+        ex_e_ashe.style.display = 'none';
+        ex_r_ashe.style.display = 'none';
+    }
+    function ashe_q() {
+        ex_p_ashe.style.display = 'none';
+        ex_q_ashe.style.display = 'block';
+        ex_w_ashe.style.display = 'none';
+        ex_e_ashe.style.display = 'none';
+        ex_r_ashe.style.display = 'none';
+    }
+    function ashe_w() {
+        ex_p_ashe.style.display = 'none';
+        ex_q_ashe.style.display = 'none';
+        ex_w_ashe.style.display = 'block';
+        ex_e_ashe.style.display = 'none';
+        ex_r_ashe.style.display = 'none';
+    }
+    function ashe_e() {
+        ex_p_ashe.style.display = 'none';
+        ex_q_ashe.style.display = 'none';
+        ex_w_ashe.style.display = 'none';
+        ex_e_ashe.style.display = 'block';
+        ex_r_ashe.style.display = 'none';
+    }
+    function ashe_r() {
+        ex_p_ashe.style.display = 'none';
+        ex_q_ashe.style.display = 'none';
+        ex_w_ashe.style.display = 'none';
+        ex_e_ashe.style.display = 'none';
+        ex_r_ashe.style.display = 'block';
+    }
+    //FIM ASHE //
+
+    //BLITZ// 
+
+    function blitz_p() {
+        ex_p_blitz.style.display = 'block';
+        ex_q_blitz.style.display = 'none';
+        ex_w_blitz.style.display = 'none';
+        ex_e_blitz.style.display = 'none';
+        ex_r_blitz.style.display = 'none';
+    }
+    function blitz_q() {
+        ex_p_blitz.style.display = 'none';
+        ex_q_blitz.style.display = 'block';
+        ex_w_blitz.style.display = 'none';
+        ex_e_blitz.style.display = 'none';
+        ex_r_blitz.style.display = 'none';
+    }
+    function blitz_w() {
+        ex_p_blitz.style.display = 'none';
+        ex_q_blitz.style.display = 'none';
+        ex_w_blitz.style.display = 'block';
+        ex_e_blitz.style.display = 'none';
+        ex_r_blitz.style.display = 'none';
+    }
+    function blitz_e() {
+        ex_p_blitz.style.display = 'none';
+        ex_q_blitz.style.display = 'none';
+        ex_w_blitz.style.display = 'none';
+        ex_e_blitz.style.display = 'block';
+        ex_r_blitz.style.display = 'none';
+    }
+    function blitz_r() {
+        ex_p_blitz.style.display = 'none';
+        ex_q_blitz.style.display = 'none';
+        ex_w_blitz.style.display = 'none';
+        ex_e_blitz.style.display = 'none';
+        ex_r_blitz.style.display = 'block';
+    }
+
+    // FIM BLITZ //
+
+    // MALPHITE // 
+
+    function malph_p() {
+        ex_p_malph.style.display = 'block';
+        ex_q_malph.style.display = 'none';
+        ex_w_malph.style.display = 'none';
+        ex_e_malph.style.display = 'none';
+        ex_r_malph.style.display = 'none';
+    }
+    function malph_q() {
+        ex_p_malph.style.display = 'none';
+        ex_q_malph.style.display = 'block';
+        ex_w_malph.style.display = 'none';
+        ex_e_malph.style.display = 'none';
+        ex_r_malph.style.display = 'none';
+    }
+    function malph_w() {
+        ex_p_malph.style.display = 'none';
+        ex_q_malph.style.display = 'none';
+        ex_w_malph.style.display = 'block';
+        ex_e_malph.style.display = 'none';
+        ex_r_malph.style.display = 'none';
+    }
+    function malph_e() {
+        ex_p_malph.style.display = 'none';
+        ex_q_malph.style.display = 'none';
+        ex_w_malph.style.display = 'none';
+        ex_e_malph.style.display = 'block';
+        ex_r_malph.style.display = 'none';
+    }
+    function malph_r() {
+        ex_p_malph.style.display = 'none';
+        ex_q_malph.style.display = 'none';
+        ex_w_malph.style.display = 'none';
+        ex_e_malph.style.display = 'none';
+        ex_r_malph.style.display = 'block';
+    }
+
+
+</script>

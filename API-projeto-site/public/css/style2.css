@@ -1,0 +1,542 @@
+.video_fundo{
+    margin: 0px;
+    display: block;
+    width: 100%;
+    min-height: 660px;
+    padding: 0px;
+    position: relative;
+
+}
+.link_video{
+    margin: 0px;
+    position: relative;
+}
+#div_video{
+    text-align: center;
+    position: relative;
+    
+}
+.conteudo2{
+    background-color: rgba(255, 255, 255, 0.822);
+    border-radius: 20px;
+    width: 85%;
+    height: 735px;
+    box-shadow: 3px 3px 5px 2px #000;
+    position: absolute;
+    z-index: 2;
+    top: 75px;
+    left: 110px;
+}
+#intro_camp h2{
+    font-family: 'Antonio', sans-serif;
+    text-align: center;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+#intro_camp h3{
+    font-family: 'Antonio', sans-serif;
+    text-align: center;
+    margin-top: 0px;
+}
+#intro_camp h4{
+    font-family: 'Antonio', sans-serif;
+    margin-left: 322px;
+    margin-top: 0px;
+
+}
+.classes1{
+    margin-left: 325px;
+    margin-right: 50px;
+}
+.classes{
+    margin-right: 45px;
+}
+
+#div_cont{
+    background-color: rgba(255, 255, 255, 0.425);
+    border-radius: 20px;
+    width: 99%;
+    height: 560px;
+    position: absolute;
+    z-index: 2;
+    top: 170px;
+    left: 7px;
+
+}
+#intro_camp img{
+    cursor: pointer;
+}
+
+/* ASSASSINO SHACO */
+
+.img_camps {
+    width: 290px;
+    height: 500px;
+    margin-left: 10px;
+    float: left;
+    margin-top: 30px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.camps_cont h1{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 435px;
+    margin-top: 0px;
+}
+.camps_cont h3{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 410px;
+    margin-bottom: 0px;
+}
+.camps_cont b{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.habilidades h3{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 435px;
+    margin-bottom: 0px; 
+}
+#shaco_p{
+    border-radius: 10px;
+    float: left;
+    margin-top: 60px;
+    margin-left: 145px;
+    margin-right: 10px;
+}
+#foto_hab{
+    margin-top: 50px;
+    float: right;
+    margin-right: -200px;
+}
+#foto_hab img{
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+#ex_p_shaco h3{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 435px;
+    margin-bottom: 0px;  
+}
+#ex_p_shaco b{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 160px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#ex_q_shaco h3{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 450px;
+    margin-bottom: 0px;  
+}
+#ex_q_shaco b{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 120px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#ex_w_shaco h3{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 420px;
+    margin-bottom: 0px;  
+}
+#ex_w_shaco b{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 175px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#ex_e_shaco h3{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 410px;
+    margin-bottom: 0px;  
+}
+#ex_e_shaco b{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#ex_r_shaco h3{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 410px;
+    margin-bottom: 0px;  
+}
+#ex_r_shaco b{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* SETT */
+
+#ex_p_sett h3{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 435px;
+    margin-bottom: 0px;  
+}
+#ex_p_sett b{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 100px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#ex_q_sett h3{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 450px;
+    margin-bottom: 0px;  
+}
+#ex_q_sett b{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 120px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#ex_w_sett h3{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 420px;
+    margin-bottom: 0px;  
+}
+#ex_w_sett b{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 75px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#ex_e_sett h3{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 410px;
+    margin-bottom: 0px;  
+}
+#ex_e_sett b{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 90px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#ex_r_sett h3{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 410px;
+    margin-bottom: 0px;  
+}
+#ex_r_sett b{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 90px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* FIM SETT */
+
+
+/* VEIGAR */
+#ex_p_veigar h3{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 385px;
+    margin-bottom: 0px;  
+}
+#ex_p_veigar b{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 100px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#ex_q_veigar h3{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 430px;
+    margin-bottom: 0px;  
+}
+#ex_q_veigar b{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 100px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#ex_w_veigar h3{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 420px;
+    margin-bottom: 0px;  
+}
+#ex_w_veigar b{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#ex_e_veigar h3{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 410px;
+    margin-bottom: 0px;  
+}
+#ex_e_veigar b{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 190px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#ex_r_veigar h3{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 410px;
+    margin-bottom: 0px;  
+}
+#ex_r_veigar b{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 90px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+ /*FIM VEIGAR */
+
+
+ /* ASHE */
+
+ #ex_p_ashe h3{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 385px;
+    margin-bottom: 0px;  
+}
+#ex_p_ashe b{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 35px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#ex_q_ashe h3{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 430px;
+    margin-bottom: 0px;  
+}
+#ex_q_ashe b{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 55px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#ex_w_ashe h3{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 455px;
+    margin-bottom: 0px;  
+}
+#ex_w_ashe b{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 220px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#ex_e_ashe h3{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 410px;
+    margin-bottom: 0px;  
+}
+#ex_e_ashe b{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 190px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#ex_r_ashe h3{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 410px;
+    margin-bottom: 0px;  
+}
+#ex_r_ashe b{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+/* FIM ASHE */
+
+/* BLITZ */
+
+#ex_p_blitz h3{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 415px;
+    margin-bottom: 0px;  
+}
+#ex_p_blitz b{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 250px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#ex_q_blitz h3{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 430px;
+    margin-bottom: 0px;  
+}
+#ex_q_blitz b{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 110px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#ex_w_blitz h3{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 455px;
+    margin-bottom: 0px;  
+}
+#ex_w_blitz b{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#ex_e_blitz h3{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 410px;
+    margin-bottom: 0px;  
+}
+#ex_e_blitz b{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 120px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#ex_r_blitz h3{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 425px;
+    margin-bottom: 0px;  
+}
+#ex_r_blitz b{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* FIM BLITZ */
+
+/* MALPHITE */
+
+
+#ex_p_malph h3{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 415px;
+    margin-bottom: 0px;  
+}
+#ex_p_malph b{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#ex_q_malph h3{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 430px;
+    margin-bottom: 0px;  
+}
+#ex_q_malph b{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#ex_w_malph h3{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 455px;
+    margin-bottom: 0px;  
+}
+#ex_w_malph b{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 45px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#ex_e_malph h3{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 410px;
+    margin-bottom: 0px;  
+}
+#ex_e_malph b{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 90px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#ex_r_malph h3{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 425px;
+    margin-bottom: 0px;  
+}
+#ex_r_malph b{
+    font-family: 'Antonio', sans-serif;
+    float: right;
+    margin-right: 180px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
