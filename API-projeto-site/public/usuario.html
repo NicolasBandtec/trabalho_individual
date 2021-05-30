@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.2/chart.min.js"
+        integrity="sha512-dnUg2JxjlVoXHVdSMWDYm2Y5xcIrJg1N+juOuRi0yLVkku/g26rwHwysJDAMwahaDfRpr1AxFz43ktuMPr/l1A=="
+        crossorigin="anonymous"> </script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style_usu.css">
     <link rel="shortcut icon" href="img/lol-icon.png" type="image/x-icon">
@@ -72,10 +75,14 @@
                 <img src="elos/mestre.png" alt="mestre" style="width: 150px; height: 140px;">
                 <img src="elos/grao-mestre.png" alt="grao-mestre" style="width: 150px; height: 140px;">
                 <img src="elos/Challenger.png" alt="Challenger" style="width: 130px; height: 120px;">
-                <a>MESTRE</a><a>GRAO-MESTRE</a><a>CHALLENGER</a>
+                <a>MESTRE</a><a>GRAO-MESTRE</a><a>DESAFIANTE</a>
+            </div>
+            <div id="grafico_elo" style="display: none;">
+                <canvas width="500px" height="450px" id="chart_two">
+
             </div>
 
-            
+
         </div>
 
 
@@ -134,6 +141,44 @@
 
     }
 
+    var ctx = chart_two.getContext('2d');
+
+    var myChart = new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: ['Desafiante', 'Grão-Mestre', 'Mestre', 'Diamante', 'Platina', 'Ouro', 'Prata', 'Bronze', 'Ferro'],
+            datasets: [{
+                label: '# of Votes',
+                data: [0.013, 0.030, 0.12, 1.5, 10, 27, 37, 20, 2.1],
+                backgroundColor: [
+                    'rgba(235, 199, 36, 92)',
+                    'rgba(235, 55, 41, 92)',
+                    'rgba(235, 33, 193, 92)',
+                    'rgba(99, 133, 235, 92)',
+                    'rgba(78, 235, 124, 92)',
+                    'rgba(245, 183, 15, 96)',
+                    'rgba(178, 217, 194, 85)',
+                    'rgba(205, 127, 50, 80)',
+                    'rgba(219, 159, 85, 86)'
+
+                ],
+                borderColor: [
+                    'rgba(235, 199, 36, 92)',
+                    'rgba(235, 55, 41, 92)',
+                    'rgba(235, 33, 193, 92)',
+                    'rgba(99, 133, 235, 92)',
+                    'rgba(78, 235, 124, 92)',
+                    'rgba(245, 183, 15, 96)',
+                    'rgba(178, 217, 194, 85)',
+                    'rgba(205, 127, 50, 80)',
+                    'rgba(219, 159, 85, 86)'
+                ],
+                borderWidth: 1
+            }]
+        },
+
+    });
+
     var vitoria = (parseInt(Math.random() * 1501)) + 150;
     var derrota = (parseInt(Math.random() * 1501)) + 300;
     var campeaos = parseInt(Math.random() * 181);
@@ -145,10 +190,17 @@
     function historico() {
         hist.style.display = 'block';
         elo.style.display = 'none';
+        grafico_elo.style.display = 'none';
     }
-    function elos(){
+    function elos() {
         hist.style.display = 'none';
         elo.style.display = 'block';
+        grafico_elo.style.display = 'none';
+    }
+    function graficos() {
+        hist.style.display = 'none';
+        elo.style.display = 'none';
+        grafico_elo.style.display = 'block';
     }
 
 </script>
